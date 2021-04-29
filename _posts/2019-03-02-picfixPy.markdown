@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Image Enhancement (Python) Project"
+title: ":paperclip: Image Enhancement (Python) Project"
 layout: post
 date: 2019-03-02 22:10
 tag: jekyll

@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Income Prediction Project"
+title: ":paperclip: Income Prediction Project"
 layout: post
 date: 2018-12-01 22:10
 tag: jekyll

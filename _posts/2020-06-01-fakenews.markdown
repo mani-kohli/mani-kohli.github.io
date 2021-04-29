@@ -1,5 +1,5 @@
 ---
-title: ":bulb: Fake News Detection Project"
+title: ":paperclip: Fake News Detection Project"
 layout: post
 date: 2020-06-01 22:10
 tag: jekyll
