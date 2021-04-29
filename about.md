@@ -4,19 +4,11 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Data science and analytics, software engineering, medical courses and psychology.
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+Diversity in experience has centered around my primary career goal, integration of technology leading towards innovation. This is why I felt a Master in Data Science was a natural complement towards my objectives and with my skills. Additionally, I have a particular interest with innovation within healthcare and medical sciences, which aligns with my scholastic and industrial experience as well.</p>
+
+<p>During my time off, I enjoy many different activities. I love playing sports (especially hockey, tennis and golf) and I keep active by focussing on living a healthy lifestyle. I also enjoy casual evenings with family and friends and staying informed on current events.</p>
 
 <h2>Skills</h2>
 
