@@ -62,8 +62,8 @@ authors:
   jamesfoster:
     name: James Foster
     bio: A Man who develops software with coffee
-    external-image: true
-    picture: assets/images/profile2.jpg
+    external-image: false
+    picture: assets/images/profile.jpg
     twitter: jamesfoster
 
 # do you want a larger site? change the option below
