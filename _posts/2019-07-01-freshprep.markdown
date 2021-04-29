@@ -1,5 +1,5 @@
 ---
-title: ":ramen: FreshPrep Order Rate Prediction Project"
+title: ":paperclip: FreshPrep Order Rate Prediction Project"
 layout: post
 date: 2019-07-01 22:10
 tag: jekyll
