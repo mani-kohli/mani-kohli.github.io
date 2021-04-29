@@ -1,7 +1,7 @@
 ---
 title: ":ramen: FreshPrep Order Rate Prediction Project"
 layout: post
-date: 2020-06-01 22:10
+date: 2019-07-01 22:10
 tag: jekyll
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
