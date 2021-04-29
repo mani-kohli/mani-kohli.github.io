@@ -2,8 +2,8 @@
 title: ":paperclip: FreshPrep Order Rate Prediction Project"
 layout: post
 date: 2019-07-01 22:10
-tag: jekyll
-image: https://mani-kohli.github.io/indigo/assets/images/fp_main6.jpg
+tag: [FreshPrep, Capstone, Project, Data Science Lifecycle, Machine Learning, Logistic Regression, Random Forrest, Empirical Bayes, Mean Absolute Percentage Error (MAPE), Docker, Tableau, UBC MDS]
+image: https://mani-kohli.github.io/assets/images/fp_main6.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
