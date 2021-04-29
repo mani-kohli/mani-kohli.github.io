@@ -141,9 +141,3 @@ Overall, I found the capstone project an enlightening experience in not only app
 ### Acknowledgments
 
 I'd like to thank my team members [Hayley Boyce](https://www.linkedin.com/in/hayley-boyce/), [Orphelia Ellogne](https://www.linkedin.com/in/amah-orphelia-ellogne-a51b11a3/) and [Rachel Riggs](https://www.linkedin.com/in/rachel-k-riggs/). Also, a special thank you to our faculty supervisor [Micheal Gelbart](https://www.mikegelbart.com/) and our partners from [FreshPrep](https://www.freshprep.ca/).    
-
-
----
-
-[Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
