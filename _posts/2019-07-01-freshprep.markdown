@@ -3,7 +3,7 @@ title: ":paperclip: FreshPrep Order Rate Prediction Project"
 layout: post
 date: 2019-07-01 22:10
 tag: jekyll
-image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+image: https://mani-kohli.github.io/indigo/assets/images/fp_main6.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
