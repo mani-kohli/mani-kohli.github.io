@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Fake News Project"
+title: ":ramen: FreshPrep Order Rate Prediction Project"
 layout: post
 date: 2020-06-01 22:10
 tag: jekyll
