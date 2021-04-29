@@ -1,5 +1,5 @@
 ---
-title: ":folder: Facial Expression Detection Project"
+title: ":file: Facial Expression Detection Project"
 layout: post
 date: 2020-07-01 22:10
 tag: jekyll
