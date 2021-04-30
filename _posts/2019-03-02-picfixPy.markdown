@@ -2,8 +2,8 @@
 title: ":paperclip: Image Enhancement (Python) Project"
 layout: post
 date: 2019-03-02 22:10
-tag: jekyll
-image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+tag: [Tests, Python, Project, UBC MDS]
+image: https://mani-kohli.github.io/assets/images/camera.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
@@ -13,23 +13,115 @@ author: johndoe
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+#### UBC MDS Project
+## picfixPy
 
----
+[![Build Status](https://travis-ci.org/UBC-MDS/picfixPy.svg?branch=master)](https://travis-ci.org/UBC-MDS/picfixPy) [![codecov](https://codecov.io/gh/UBC-MDS/picfixPy/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/picfixPy)
 
-What has inside?
 
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
+### Project Overview
 
----
+Image enhancement is typically done with a full-scale editing software such as Adobe Photoshop or GIMP, but what if we just want to quickly touch up an image during prototyping in a programming environment?  
 
-[Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
+**picfixPy** allows users to quickly enhance images in an integrated development environment (IDE) (e.g. Jupyter notebook, PyCharm) without powering up an image editing software. Users can quickly adjust the sharpness, contrast, and vibrance of .png images, by simply calling the corresponding functions. This package currently offers three essential image enhancement functions, and we hope to implement additional features in the near future.  
+
+### To install
+
+<pre><code>pip install git+https://<span></span>github<span>.</span>com/UBC-MDS/picfixPy.git</code></pre>
+
+
+### To upgrade
+
+<pre><code>pip install --upgrade git+https://<span></span>github<span>.</span>com/UBC-MDS/picfixPy.git</code></pre>
+
+
+### To use
+
+**sharpen(): enhance the sharpness of your image**
+{: style="color:#1645C6; font-size: 130%;"}
+
+<pre><code>from picfixPy.sharpen import sharpen
+sharpen('input.png', 4, False, 'sharpen_output.png')</code></pre>
+
+Arguments:
+
+- input_img: path to an input image
+- intensity: level of sharpness enhancement, between 0 and 10, defaults to 5.
+- display: print image to console if *True*, defaults to *False*.
+- output_img: path to save the output image
+
+![](/assets/images/sharpen_output.png "sharpen")
+**Fig 1: Sharpen picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}   
+
+
+**contrast(): enhance the contrast of your image**
+{: style="color:#1645C6; font-size: 130%;"}
+
+<pre><code>from picfixPy.contrast import contrast
+contrast('input.png', 4, False, 'contrast_output.png')</code></pre>
+
+Arguments:
+
+- input_img: path to an input image
+- intensity: level of contrast enhancement, between 0 and 10, defaults to 5.
+- display: print image to console if *True*, defaults to *False*.
+- output_img: path to save the output image
+
+![](/assets/images/contrast_output.png "contrast")
+**Fig 2: Contrast picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}   
+
+
+**vibrance(): enhance the colour vibrance of your image**
+{: style="color:#1645C6; font-size: 130%;"}  
+
+<pre><code>from picfixPy.vibrance import vibrance
+vibrance('input.png', 4, False, 'vibrance_output.png')</code></pre>
+
+Arguments:
+
+- input_img: path to an input image
+- intensity: level of vibrance enhancement, between -10 and 10, defaults to 5.
+- display: print image to console if *True*, defaults to *False*.
+- output_img: path to save the output image
+
+![](/assets/images/vibrance_output.png "vibrance")
+**Fig 3: Vibrance picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}    
+
+
+### Supported image types
+
+- .jpg
+- .png
+- .tiff
+
+### Dependencies
+
+- numpy
+- matplotlib
+- scikit-image
+
+### Tests and test coverage
+
+![test_coverage](/assets/images/coverage.png "coverage")
+**Fig 4: Test coverage output**
+{: style="color:#000000; font-size: 90%; text-align: center;"}   
+
+
+### Fitting into the Python ecosystem
+
+[OpenCV](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html) provides Python with an immersive package for complex image processing. However, even for basic image enhancements, users typically still have to dig into a substantial amount of documentation and implementation details. This project offers a simple alternative, allowing users to have the ability to enhance images quickly during prototyping without the overhead of heavy library resources.
+
+
+### Team Members
+
+* [Miliban Keyim](https://github.com/mkeyim)   
+* [Mani Kohli](https://github.com/mani-kohli)   
+* [George Wu](https://github.com/GeorgeJJw)
+
+
+### Full Project Repository
+[picfixPy](https://github.com/mani-kohli/picfixPy)
