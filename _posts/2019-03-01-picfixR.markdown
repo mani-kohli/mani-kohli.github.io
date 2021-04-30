@@ -95,7 +95,7 @@ Arguments:
 **Overall results**
 {: style="color:#1645C6; font-size: 130%;"}
 
-| ![](/assets/images/cat.png) | ![](/assets/images/cat_contrast.png) |
+| ![](/assets/images/cat.png) | ![](/assets/images/cat_contrast_all.png) |
 
 **Fig 1: Contrast picture - before and after**
 {: style="color:#000000; font-size: 90%; text-align: center;"}  
