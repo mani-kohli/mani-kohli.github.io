@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
+![About Me](/assets/images/SimpsonsMe.png "Mani")
 
 <p>Data science and analytics, software engineering, medical courses and psychology.
 
