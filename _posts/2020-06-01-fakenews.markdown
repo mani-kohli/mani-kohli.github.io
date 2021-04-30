@@ -178,7 +178,7 @@ twitter_real_usernames = twitter_username_count(df_real)
 print("The number of twitter usernames in the real data: " + str(twitter_real_usernames))
 print("The number of twitter usernames in the fake data: " + str(twitter_fake_usernames))
 ```
-<img src="/assets/img/fakenews/pic9.png" width="500" />  
+<img src="/assets/images/fakenews/pic9.png" width="500" />  
 
 An interesting initial observation is the number of mentions of @ twitter users in the fake news dataset compared to the real dataset. This could be considered as a bias in the fake dataset, but preprocessing the news datasets would remove this bias anyway.       
 <br />    
