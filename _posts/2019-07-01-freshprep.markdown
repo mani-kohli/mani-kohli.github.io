@@ -7,7 +7,7 @@ image: https://mani-kohli.github.io/assets/images/fp_main6.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "Playing around with Natural Language Processing (NLP) and LSTM Neural Networks (NN)."
+description: "MDS Capstone Project: FreshPrep Order Rate Prediction ."
 category: project
 author: johndoe
 externalLink: false

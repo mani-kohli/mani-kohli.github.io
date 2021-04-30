@@ -7,7 +7,7 @@ image: https://mani-kohli.github.io/assets/images/mental.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "Playing around with Natural Language Processing (NLP) and LSTM Neural Networks (NN)."
+description: "Mental Health Wellness with Shiny."
 category: project
 author: johndoe
 externalLink: false

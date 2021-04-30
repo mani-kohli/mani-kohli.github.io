@@ -7,7 +7,7 @@ image: https://mani-kohli.github.io/assets/images/faces3.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "Playing around with Convolutional Neural Network (CNN) and Keras."
+description: "Facial Expression Detection with CNN and Keras."
 category: project
 author: johndoe
 externalLink: false
