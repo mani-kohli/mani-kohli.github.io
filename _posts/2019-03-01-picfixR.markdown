@@ -2,8 +2,8 @@
 title: ":paperclip: Image Enhancement (R) Project"
 layout: post
 date: 2019-03-01 22:10
-tag: jekyll
-image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+tag: [Tests, R, Project, UBC MDS]
+image: https://mani-kohli.github.io/assets/images/cameraR.jpg
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
@@ -13,23 +13,127 @@ author: johndoe
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+#### UBC MDS Project
+## picfixR  
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+[![Build Status](https://travis-ci.org/UBC-MDS/picfixR.svg?branch=master)](https://travis-ci.org/UBC-MDS/picfixR) [![Coverage status](https://codecov.io/gh/UBC-MDS/picfixR/branch/master/graph/badge.svg)](https://codecov.io/github/UBC-MDS/picfixR?branch=master)
 
----
+### Project Overview
 
-What has inside?
+Image enhancement is typically done with a full-scale editing software such as Adobe Photoshop or GIMP, but what if we just want to quickly touch up an image during prototyping in a programming environment?
 
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
+**picfixR** allows users to quickly enhance images in an integrated development environment (IDE) (e.g. Jupyter notebook, RStudio) without powering up an image editing software. Users can quickly adjust the sharpness, contrast, and vibrance of .png images, by simply calling the corresponding functions. This package currently offers three essential image enhancement functions, and we hope to implement additional features in the near future.
 
----
+### To install
 
-[Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
+1. Please ensure you have the **devtools** package already installed. If not, you can install **devtools** by running *install.packages("devtools")* at your R console.  
+
+2. Check that you have all the required dependencies for this package installed.  
+
+3. Install this package by running the following command at your R console.  
+
+<pre><code>devtools:: install_github("UBC-MDS/picfixR")</code></pre>
+
+
+### To use
+
+<pre><code>library(picfixR)</code></pre>
+
+**sharpen(): enhance the sharpness of your image**
+{: style="color:#1645C6; font-size: 130%;"}
+
+<pre><code>sharpen("cat.png", 8, F, "sharpen/cat_sharpen.png")</code></pre>
+
+Arguments:
+
+- input_img: path to an input image
+- intensity: level of sharpness adjustment, between 0 and 10, defaults to 5.
+- display: print image to console if *TRUE*, defaults to *FALSE*.
+- output_img: path to save the output image
+
+| ![](/assets/images/cat.png) | ![](/assets/images/cat_sharpen.png) |
+
+**Fig 1: Sharpen picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}   
+
+
+**vibrance(): enhance the colour vibrance of your image**
+{: style="color:#1645C6; font-size: 130%;"}
+
+<pre><code>vibrance("sharpen/cat_sharpen.png", 10, F, "vibrance/cat_vibrance.png")</code></pre>
+
+Arguments:
+
+- input_img: path to an input image
+- intensity: level of vibrance adjustment, between -10 and 10, defaults to 5.
+- display: print image to console if *TRUE*, defaults to *FALSE*.
+- output_img: path to save the output image
+
+| ![](/assets/images/cat_sharpen.png) | ![](/assets/images/cat_vibrance.png) |
+
+**Fig 1: Vibrance picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}   
+
+
+**contrast(): enhance the contrast of your image**
+{: style="color:#1645C6; font-size: 130%;"}
+
+<pre><code>contrast("vibrance/cat_vibrance.png", 1.5, F, "contrast/cat_contrast.png")</code></pre>
+
+Arguments:
+
+- input_img: path to an input image
+- intensity: level of contrast enhancement, between 0 and 10, defaults to 5.
+- display: print image to console if `TRUE`, defaults to `FALSE`.
+- output_img: path to save the output image
+
+| ![](/assets/images/cat_vibrance.png) | ![](/assets/images/cat_contrast.png) |
+
+**Fig 1: Contrast picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}  
+
+**Overall results**
+{: style="color:#1645C6; font-size: 130%;"}
+
+| ![](/assets/images/cat.png) | ![](/assets/images/cat_contrast.png) |
+
+**Fig 1: Contrast picture - before and after**
+{: style="color:#000000; font-size: 90%; text-align: center;"}  
+
+
+### Supported image types
+
+- .png
+
+
+### Dependencies
+
+- png
+- testit
+- plotwidgets
+- mmand
+
+
+### Tests and test coverage
+
+![tests](/assets/images/tests.png)
+
+![coverage](/assets/images/coverageR.png)
+
+![cmd_check](/assets/images/cmd_check.png)
+
+
+### Fitting into the R ecosystem
+
+[magick](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) provides R with a comprehensive package with an overwhelming amount of functionality for complex image processing. However, even for basic image enhancements, users typically still have to dig into a substantial amount of documentation and implementation details. This project offers a simple alternative, allowing users to have the ability to enhance images quickly during prototyping without the overhead of heavy library resources.
+
+
+### Team Members
+
+* [Miliban Keyim](https://github.com/mkeyim)   
+* [Mani Kohli](https://github.com/mani-kohli)   
+* [George Wu](https://github.com/GeorgeJJw)
+
+
+### Full Project Repository
+[picfixR](https://github.com/mani-kohli/picfixR)
