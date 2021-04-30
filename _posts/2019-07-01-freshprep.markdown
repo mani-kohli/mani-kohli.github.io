@@ -19,7 +19,7 @@ externalLink: false
 **Note:**  As part of my NDA and to protect the privacy of FreshPrep, confidential information is being withheld, such as descriptive statistics of actual data.     
 
 <center>
-<video width="756" height="498" controls="controls">
+<video width="656" height="498" controls="controls">
 <source src="/assets/images/Fp_themovie_720p.mp4" type="video/mp4">
 </video>
 </center>
